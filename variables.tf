@@ -15,10 +15,10 @@ variable "app_service_plan_id" {}
 ##################################################################################
 
 locals {
-    env_name = lower(terraform.workspace)
+  env_name = lower(terraform.workspace)
 
-    common_tags = {
-        Environment = local.env_name
-        Name = var.name
-    }
+  common_tags = {
+    Environment = local.env_name
+    Name        = var.name
+  }
 }

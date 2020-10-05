@@ -4,8 +4,8 @@ resource "azurerm_app_service" "app_service" {
   location            = var.location
   resource_group_name = var.resource_group_name
   app_service_plan_id = var.app_service_plan_id
-  tags = local.common_tags
-  
+  tags                = local.common_tags
+
 
   site_config {
     dotnet_framework_version = "v4.0"
