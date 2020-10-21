@@ -1,9 +1,4 @@
-provider "azurerm" {
 
-  version = "=2.28.0"
-  features {}
-
-}
 resource "azurerm_app_service" "app_service" {
   name                = var.name
   location            = var.location
