@@ -5,6 +5,7 @@ resource "azurerm_app_service" "app_service" {
   resource_group_name = var.resource_group_name
   app_service_plan_id = var.app_service_plan_id
   tags                = local.common_tags
+  client_affinity_enabled = true
 
 
   site_config {
