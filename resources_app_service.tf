@@ -7,9 +7,8 @@ resource "azurerm_app_service" "app_service" {
   tags                = local.common_tags
   client_affinity_enabled = true
 
-
   site_config {
-    dotnet_core_version = "v3.1"
+    dotnet_framework_version = "v4.0"
     scm_type = "LocalGit"
     always_on = true
     managed_pipeline_mode = "Integrated"
