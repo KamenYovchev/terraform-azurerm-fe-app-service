@@ -8,7 +8,7 @@ resource "azurerm_app_service" "app_service" {
 
 
   site_config {
-    linux_fx_version = "DOTNETCORE|2.1"
+    dotnet_framework_version = "v4.0"
     scm_type = "LocalGit"
     always_on = true
     managed_pipeline_mode = "Integrated"
