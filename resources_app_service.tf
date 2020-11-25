@@ -9,7 +9,5 @@ resource "azurerm_app_service" "app_service" {
   site_config {
     dotnet_framework_version = "v4.0"
     scm_type = "LocalGit"
-    always_on = true
-
   }
 }
