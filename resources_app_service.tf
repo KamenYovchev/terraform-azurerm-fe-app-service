@@ -6,8 +6,4 @@ resource "azurerm_app_service" "app_service" {
   app_service_plan_id = var.app_service_plan_id
   tags                = local.common_tags
 
-  site_config {
-    dotnet_framework_version = "v4.0"
-    scm_type = "LocalGit"
-  }
 }
