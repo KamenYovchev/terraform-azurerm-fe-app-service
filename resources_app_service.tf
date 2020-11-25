@@ -14,5 +14,8 @@ resource "azurerm_app_service" "app_service" {
     managed_pipeline_mode = "Integrated"
     ftps_state = "Disabled"
     websockets_enabled = false
+    cors {
+      allowed_origins     = ["*"]
+    }
   }
 }
