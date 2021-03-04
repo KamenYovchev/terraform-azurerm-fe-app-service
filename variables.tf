@@ -10,6 +10,8 @@ variable "resource_group_name" {}
 
 variable "app_service_plan_id" {}
 
+variable "web_app_url" {}
+
 variable "client_affinity_enabled" {
   type = bool
   default = false
@@ -46,10 +48,6 @@ variable "ftps_state" {
 variable "websocket_enabled" {
   type = bool
   default = false
-}
-
-variable "web_app_url" {
-   type = map(string)
 }
 
 variable "token_uri" {
