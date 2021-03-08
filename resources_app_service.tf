@@ -50,12 +50,12 @@ resource "azurerm_app_service" "app_service" {
   connection_string {
     name = "RedisDatabase"
     type = "RedisCache"
-    value = var.redis_cache
+    value = var.redis_cache_connection_string
   }
 
   connection_string {
     name = "CookieRedisDatabase"
     type = "RedisCache"
-    value = var.redis_cache
+    value = var.redis_cache_coockies_connection_string
   }
 }

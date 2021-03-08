@@ -81,7 +81,11 @@ variable "signalR_connection_string" {
   description = "Connection string for SignalR"
 }
 
-variable "redis_cache" {
+variable "redis_cache_connection_string" {
+  description = "Redis cache server connection string"
+}
+
+variable "redis_cache_coockies_connection_string" {
   description = "Redis cache server connection string"
 }
 
