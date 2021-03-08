@@ -73,9 +73,9 @@ variable "storage_account_connection_string" {
   description = "Storage account connection string"
 }
 
-variable "api_key" {
-  description = "Cognitive account text to speech api key"
-}
+//variable "api_key" {
+//  description = "Cognitive account text to speech api key"
+//}
 
 variable "signalR_connection_string" {
   description = "Connection string for SignalR"
