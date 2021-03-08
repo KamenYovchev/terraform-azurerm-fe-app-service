@@ -25,7 +25,7 @@ resource "azurerm_app_service" "app_service" {
     "AzureTextToSpeech:TokenUri" = var.token_uri
     "AzureTextToSpeech:EndpointUri" = var.token_uri
     "AzureTextToSpeech:DC" = var.dc
-    "AzureTextToSpeech:ApiKey" = var.api_key
+//    "AzureTextToSpeech:ApiKey" = var.api_key
     "AzureMediaServicesConfig:AadClientId" = var.aad_client_id
     "AzureMediaServicesConfig:AadSecret" = var.aad_client_secret
     "AzureMediaServicesConfig:AadTenantId" = var.aad_tennant_id
