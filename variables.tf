@@ -94,6 +94,9 @@ variable "redis_cache_coockies_connection_string" {
 variable "ms_aad_client_id" {
   description = "client aad app id for permissions for media service"
 }
+variable "ms_resource_group_name" {
+  description = "resource group name where media service is deployed"
+}
 
 variable "od_aad_client_id" {
   description = "client aad app id for permissions for one drive"
@@ -105,6 +108,9 @@ variable "ad_aad_client_id" {
 
 variable "ms_aad_client_secret" {
   description = "Password for aad applicaton related with permissions in environment for media service"
+}
+variable "ms_susbscription_id" {
+  description = "Subscription_id where media service is deployed"
 }
 
 variable "od_aad_client_secret" {
@@ -121,10 +127,6 @@ variable "od_aad_tennant_id" {
 
 variable "drive_id" {
   description = "ID of OneDrive for each client"
-}
-
-variable "media_serivce_account_name" {
-  description = "Name of media service account"
 }
 
 variable "susbscription_id" {
