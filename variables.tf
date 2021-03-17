@@ -73,9 +73,11 @@ variable "storage_account_connection_string" {
   description = "Storage account connection string"
 }
 
-//variable "api_key" {
-//  description = "Cognitive account text to speech api key"
-//}
+variable "api_key" {
+  description = "Cognitive account text to speech api key"
+}
+
+
 
 variable "signalR_connection_string" {
   description = "Connection string for SignalR"
@@ -89,15 +91,31 @@ variable "redis_cache_coockies_connection_string" {
   description = "Redis cache server connection string"
 }
 
-variable "aad_client_id" {
-  description = "client aad app id for permissions"
+variable "ms_aad_client_id" {
+  description = "client aad app id for permissions for media service"
 }
 
-variable "aad_client_secret" {
-  description = "Password for aad applicaton related with permissions in environment"
+variable "od_aad_client_id" {
+  description = "client aad app id for permissions for one drive"
 }
 
-variable "aad_tennant_id" {
+variable "ad_aad_client_id" {
+  description = "client aad app id for permissions for Azure AD"
+}
+
+variable "ms_aad_client_secret" {
+  description = "Password for aad applicaton related with permissions in environment for media service"
+}
+
+variable "od_aad_client_secret" {
+  description = "Password for aad applicaton related with permissions in environment for one drive"
+}
+
+variable "ms_aad_tennant_id" {
+  description = "Tennant ID for aad application for media service"
+}
+
+variable "od_aad_tennant_id" {
   description = "Tennant ID for aad application"
 }
 
