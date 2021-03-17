@@ -29,7 +29,7 @@ resource "azurerm_app_service" "app_service" {
     "AzureMediaServicesConfig:AadClientId" = var.ms_aad_client_id
     "AzureMediaServicesConfig:AadSecret" = var.ms_aad_client_secret
     "AzureMediaServicesConfig:AadTenantId" = var.ms_aad_tennant_id
-    "AzureMediaServicesConfig:AccountName" = var.account_name
+    "AzureMediaServicesConfig:AccountName" = var.ms_account_name
     "AzureMediaServicesConfig:ResourceGroup" = var.resource_group_name
     "AzureMediaServicesConfig:SubscriptionId" = var.susbscription_id
     "OneDriveConfig:AadClientId" = var.od_aad_client_id

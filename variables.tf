@@ -139,7 +139,7 @@ variable "service_bus_connection_string" {
   description = "Connection string for Service bus"
 }
 
-variable "account_name" {
+variable "ms_account_name" {
   description = "Azure media service account name"
 }
 ##################################################################################
