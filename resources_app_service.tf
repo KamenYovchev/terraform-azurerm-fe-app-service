@@ -25,7 +25,7 @@ resource "azurerm_app_service" "app_service" {
     "AzureTextToSpeech:TokenUri" = var.token_uri
     "AzureTextToSpeech:EndpointUri" = var.token_uri
     "AzureTextToSpeech:DC" = var.dc
-//    "AzureTextToSpeech:ApiKey" = var.api_key
+    "AzureTextToSpeech:ApiKey" = var.api_key
     "AzureMediaServicesConfig:AadClientId" = var.aad_client_id
     "AzureMediaServicesConfig:AadSecret" = var.aad_client_secret
     "AzureMediaServicesConfig:AadTenantId" = var.aad_tennant_id
@@ -33,11 +33,11 @@ resource "azurerm_app_service" "app_service" {
     "AzureMediaServicesConfig:ResourceGroup" = var.resource_group_name
     "AzureMediaServicesConfig:SubscriptionId" = var.susbscription_id
     "OneDriveConfig:AadClientId" = var.aad_client_id
-    "AadSecret" = var.aad_client_secret
-    "AadTenantId" = var.aad_tennant_id
+    "OneDriveConfig:AadSecret" = var.aad_client_secret
+    "OneDriveConfig:AadTenantId" = var.aad_tennant_id
     "OneDriveConfig:DriveId" = var.drive_id
     "AzureAd:ClientId" = var.aad_client_id
-    "EntityGuidCode:EntityGuidCode" = var.entity_guid
+    "AzureAd:EntityGuidCode" = var.entity_guid
     "ChatBotSettings:ConnectionString" = var.service_bus_connection_string
   }
 
